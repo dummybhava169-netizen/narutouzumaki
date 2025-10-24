@@ -1,0 +1,29 @@
+mport java.util.Scanner;
+
+public class Loop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter number of subjects: ");
+        int n = sc.nextInt();
+        sc.nextLine(); 
+
+        int total = 0; 
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Enter name of subject " + i + ": ");
+            String subject = sc.nextLine();
+
+            System.out.print("Enter marks for " + subject + ": ");
+            int marks = sc.nextInt();
+            sc.nextLine(); 
+
+            total += marks;
+        }
+        double average = (double) total / n;
+        System.out.println("\nTotal Marks = " + total);
+        System.out.printf("Average Marks = %.2f\n", average);
+
+        sc.close();
+    }
+}
