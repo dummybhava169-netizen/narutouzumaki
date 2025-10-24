@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Numbers{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the Integer:");
+        int number = sc.nextInt();
+        if(number > 0)
+        {
+            System.out.println("the number is positive " + number);
+        }
+        else if(number < 0){
+            System.out.println("the number is negative " + number);
+        }
+        else if(number == 0){
+            System.out.println("the number is ZERO " + number);
+        }
+    }
+}
